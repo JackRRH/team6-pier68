@@ -1,0 +1,79 @@
+/*Styling for background banner */
+.banner-item {
+    width: 100%;
+    height: 550px;
+    background-Image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pier.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.card-container {
+    position: relative;
+    width: 80%;
+    background-color: white;
+    border: 2px solid #707070;
+    margin: -150px 0 0 0;
+    padding: 50px;
+    z-index: 5;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 55px;
+    color: #FFCC00;
+    background-color: #FF4747;
+    border: 4px solid #707070;
+    border-radius: 16em;
+}
+
+.card-subtitle h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 55px;
+    color: #FFCC00;
+    background-color: #FF4747;
+    border: 4px solid #707070;
+    border-radius: 16em;
+}
+
+.card-row img {
+    margin: 0 25px;
+    width: 15%;
+    height: 100%;
+}
+
+.pamphlet-container {
+    padding: 150px;
+}
+
+.pamphlet-container img {
+    padding: 150px;
+}
+
+/* Messy solution with padding, but I've run short on time. Will tidy up if I get chance tommorow */
+
+.map {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+
+/* Include styling if iframe needs it */

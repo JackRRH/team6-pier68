@@ -1,0 +1,57 @@
+header {
+    height: 120px;
+    background: linear-gradient(90deg, rgba(255, 231, 75, 1) 0%, rgba(255, 71, 71, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button {
+    font-size: 64pt;
+    cursor: pointer;
+}
+
+nav {
+    display: block;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+nav button {
+    color: white;
+    font-size: 75px;
+    top: 0;
+    width: 100px;
+    margin: 0 0 0 100px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.sideNav {
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+
+    /* Test CSS For the toggleable nav (Forces open on page load)
+    display: flex;
+    width: 300px;
+    */
+}
+
+.sideNav li {
+    padding: 10px;
+    margin: 25px 0 10px;
+}
+
+.sideNav a {
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+.sideNav li {
+    list-style-type: none;
+}

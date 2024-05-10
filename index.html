@@ -9,46 +9,96 @@
     <meta name="authors" content="Jack Richardson, Ethan Borjas">
     <meta name="description" content="Skills USA Project">
     <meta name="keywords" content="Pier-68">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
 
+    <script>
+        function openNav() {
+            document.getElementById("toggleNav").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("toggleNav").style.width = "0";
+        }
+    </script>
 
 </head>
 
 <body>
 
-    <header>
-        <div class="nav-toggle">
-            <nav class="sidenav">
+    <nav class="sideNav" id="toggleNav">
+        <button class="nav-toggle" onclick="closeNav()">&times;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Rental</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-            </nav>
-        </div>
+    <header>
+
+
+        <button class="nav-toggle" onclick="openNav()">☰</button>
 
         <div class="logo">
-
+            Logo
         </div>
 
-        <div></div>
+        <div class="spacer-50"></div>
     </header>
 
+
+    <div class="banner-container">
+
+        <div class="banner-item">
+        </div>
+    </div>
+
     <main>
-        <div class="carousel-container">
-
-        </div>
-
-        <div class="small-card-container">
-
-        </div>
-
         <div class="card-container">
 
+            <div class="card-content">
+
+                <div class="card-title card-row">
+                    <h2>Boats</h2>
+                </div>
+
+                <div class="card-subtitle card-row">
+                    <h3 class="subtitle">Boat 1</h3>
+                    <h3 class="subtitle">Boat 2 </h3>
+                    <h3 class="subtitle">Boat 3</h3>
+                </div>
+
+                <div class="card-row card-row">
+                    <img src="images/speedboat.jpg">
+                    <img src="images/otherspeedboat.png">
+                    <img src="images/boats2.jpg">
+                </div>
+
+                <!--            3 Other images in the XD document were not uploaded, and therefore, are not used.
+                <div class="card-row card-row">
+                    <img />
+                    <img />
+                    <img />
+                </div> -->
+            </div>
+
+        </div>
+
+        <div class="pamphlet-container">
+            <img src="images/boat-rental.png">
+            <img src="images/boat-rental2.png">
         </div>
 
         <div class="map">
-
+            <!-- Need iFrame link here -->
         </div>
     </main>
 
 
-    <footer>
+    <!-- <footer>
         <div class="legal">
 
         </div>
@@ -56,7 +106,7 @@
         <div class="hours">
 
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
